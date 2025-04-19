@@ -22,7 +22,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className="fixed left-1/2 -translate-x-1/2 mt-4 w-[95%] max-w-6xl z-50 bg-white shadow-lg rounded-4xl backdrop-blur-sm border border-gray-200"
     >
-      <div className="px-6 py-3 flex justify-between items-center">
+      <div className="px-6 py-3  flex justify-between items-center">
         <Link href="/" className="text-3xl font-extrabold tracking-tight">
           <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
             MemoTag

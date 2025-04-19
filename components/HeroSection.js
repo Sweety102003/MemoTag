@@ -8,28 +8,31 @@ export default function HeroSection() {
       id="hero"
       className="min-h-screen flex flex-col md:flex-row items-center justify-between bg-lightblue text-center md:text-left px-6 py-20 gap-10 relative overflow-hidden"
     >
+      {/* Circle background animation (hidden on mobile) */}
       <motion.div
-        className="absolute top-0 left-0 w-64 h-64 bg-blue-100 rounded-full opacity-30"
+        className="absolute top-0 left-0 w-64 h-64 bg-blue-100 rounded-full opacity-30 md:block hidden"
         initial={{ x: 0, y: 0 }}
         animate={{ x: "calc(100vw - 16rem)", y: "calc(100vh - 16rem)" }}
         transition={{ duration: 6, loop: Infinity, ease: "easeInOut" }}
       ></motion.div>
 
+      {/* Image section */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex-1 flex justify-center"
+        className="flex-1 flex justify-center mt-10 md:mt-0"
       >
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-blue-100">
           <img
             src="/hero-animation-placeholder.svg"
             alt="AI animation"
-            className="w-full h-full object-contain "
+            className="w-full h-full object-contain"
           />
         </div>
       </motion.div>
 
+      {/* Text and buttons section */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -40,7 +43,7 @@ export default function HeroSection() {
           AI for <span className="text-blue-600">Dementia Care</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-600 mb-8">
+        <p className="text-lg md:text-2xl text-gray-600 mb-8">
           Empowering caregivers with smart tools to track, support, and improve
           cognitive well-being.
         </p>
@@ -55,7 +58,7 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 border border-green-600 text-green-600 px-6 py-3 rounded-full font-semibold text-lg hover:bg-green-50 transition"
           >
-            <FaWhatsapp className="text-xl" />
+            <FaWhatsapp className="text-lg" />
             Join WhatsApp Community
           </a>
         </div>

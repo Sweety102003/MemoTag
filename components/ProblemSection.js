@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="py-20 mt-0  bg-gray-50 px-6">
+    <section id="problem" className="py-20 mt-12  bg-gray-50 px-6">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
