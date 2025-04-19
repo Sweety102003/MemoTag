@@ -22,7 +22,7 @@ export default function TractionSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-100 px-6">
+    <section id="traction" className="py-20 bg-gray-100 px-6">
       <motion.div
         className="max-w-5xl mx-auto text-center"
         initial={{ opacity: 0, y: 40 }}
